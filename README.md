@@ -1,6 +1,9 @@
-# HolyNotes - Equicord/Vencord Plugin
+# HolyNotes - Equicord Plugin
 
 A plugin to save Discord messages as personal notes organized in notebooks.
+
+> **Note**: This plugin is built specifically for **Equicord** (Vencord fork).  
+> Looking for the Vencord version? Check out [`holynotes-vencord`](https://github.com/Dantesousa/holynotes-vencord).
 
 ## ✨ Features
 
@@ -18,8 +21,7 @@ A plugin to save Discord messages as personal notes organized in notebooks.
 1. Clone or download this repository
 2. Copy the `dist` folder to:
    - **Equicord**: `~/.config/Equicord/plugins/holynotes/`
-   - **Vencord**: `~/.config/Vencord/plugins/holynotes/`
-3. Enable the plugin in Equicord/Vencord settings
+3. Enable the plugin in Equicord settings
 
 ### Method 2: Local Build
 
@@ -119,8 +121,8 @@ GPL-3.0-or-later
 
 ## 🙏 Acknowledgments
 
-- [Vencord](https://github.com/Vendicated/Vencord) - Base framework
 - [Equicord](https://github.com/Equicord/Equicord) - Vencord fork
+- [Vencord](https://github.com/Vendicated/Vencord) - Base framework
 
 ---
 

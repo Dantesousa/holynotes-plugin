@@ -1,6 +1,6 @@
 /*
- * Vencord, a modification for Discord's desktop app
- * Copyright (c) 2024 Vendicated and contributors
+ * HolyNotes Plugin for Equicord
+ * Copyright (c) 2024 Dante
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
@@ -14,7 +14,7 @@ import { classes } from "@utils/misc";
 import { openModal } from "@utils/modal";
 import definePlugin from "@utils/types";
 import { ChannelStore, Menu } from "@webpack/common";
-import type { Message } from "@vencord/discord-types";
+import type { Message } from "@equicord/discord-types";
 
 import { Popover as NoteButtonPopover, Popover } from "./components/icons/NoteButton";
 import { NoteModal } from "./components/modals/Notebook";

@@ -22,7 +22,7 @@
       "@components/*": ["../equicord-source/src/components/*"],
       "@utils/*": ["../equicord-source/src/utils/*"],
       "@webpack/*": ["../equicord-source/src/webpack/*"],
-      "@vencord/*": ["../equicord-source/src/vencord/*"]
+      "@equicord/*": ["../equicord-source/src/equicord/*"]
     }
   },
   "include": ["src/**/*"],

@@ -1,6 +1,6 @@
 /*
- * Vencord, a Discord client mod
- * Copyright (c) 2024 Vendicated and contributors
+ * HolyNotes Plugin for Equicord
+ * Copyright (c) 2024 Dante
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 

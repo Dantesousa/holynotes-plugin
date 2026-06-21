@@ -1,57 +1,57 @@
-# HolyNotes - Plugin para Equicord/Vencord
+# HolyNotes - Equicord/Vencord Plugin
 
-Um plugin para salvar mensagens do Discord como notas pessoais organizadas em notebooks.
+A plugin to save Discord messages as personal notes organized in notebooks.
 
 ## ✨ Features
 
-- 📌 **Salvar mensagens**: Adicione mensagens aos seus notebooks com um clique
-- 📚 **Notebooks organizados**: Crie múltiplos notebooks para organizar suas notas
-- 🔍 **Busca rápida**: Encontre mensagens salvas facilmente
-- 💾 **Persistência local**: Dados armazenados localmente via DataStore
-- 📤 **Exportar/Importar**: Backup das suas notas em JSON
-- 🎨 **UI integrada**: Ícone na toolbar do canal e menu de contexto
+- 📌 **Save messages**: Add messages to your notebooks with one click
+- 📚 **Organized notebooks**: Create multiple notebooks to organize your notes
+- 🔍 **Quick search**: Easily find saved messages
+- 💾 **Local persistence**: Data stored locally via DataStore
+- 📤 **Export/Import**: Backup your notes in JSON format
+- 🎨 **Integrated UI**: Channel toolbar icon and context menu
 
-## 📦 Instalação
+## 📦 Installation
 
-### Método 1: Instalação Manual
+### Method 1: Manual Installation
 
-1. Clone ou baixe este repositório
-2. Copie a pasta `dist` para:
+1. Clone or download this repository
+2. Copy the `dist` folder to:
    - **Equicord**: `~/.config/Equicord/plugins/holynotes/`
    - **Vencord**: `~/.config/Vencord/plugins/holynotes/`
-3. Ative o plugin nas configurações do Equicord/Vencord
+3. Enable the plugin in Equicord/Vencord settings
 
-### Método 2: Build Local
+### Method 2: Local Build
 
 ```bash
-# Instalar dependências
+# Install dependencies
 pnpm install
 
 # Build
 pnpm build
 
-# O arquivo compilado estará em dist/index.js
+# The compiled file will be in dist/index.js
 ```
 
-## 🚀 Uso
+## 🚀 Usage
 
-1. **Adicionar nota**: Clique com o botão direito em uma mensagem → "Pin Message To" → Escolha o notebook
-2. **Abrir notas**: Clique no ícone 📌 na toolbar do canal
-3. **Gerenciar notebooks**: Use o modal para criar/remover notebooks
+1. **Add note**: Right-click a message → "Pin Message To" → Choose notebook
+2. **Open notes**: Click the 📌 icon in the channel toolbar
+3. **Manage notebooks**: Use the modal to create/remove notebooks
 
-## 🛠️ Desenvolvimento
+## 🛠️ Development
 
-### Estrutura
+### Structure
 
 ```
 holynotes/
 ├── src/
-│   ├── index.tsx       # Entry point do plugin
-│   ├── NoteHandler.ts  # Lógica de gerenciamento de notas
+│   ├── index.tsx       # Plugin entry point
+│   ├── NoteHandler.ts  # Notes management logic
 │   ├── types.ts        # Type definitions
-│   ├── utils.ts        # Funções utilitárias (DataStore, export/import)
-│   ├── style.css       # Estilos
-│   └── components/     # Componentes React
+│   ├── utils.ts        # Utility functions (DataStore, export/import)
+│   ├── style.css       # Styles
+│   └── components/     # React components
 │       ├── icons/
 │       └── modals/
 ├── package.json
@@ -62,20 +62,20 @@ holynotes/
 ### Build
 
 ```bash
-# Desenvolvimento com watch
+# Development with watch
 pnpm watch
 
-# Build de produção
+# Production build
 pnpm build
 ```
 
-### Deploy para Equicord
+### Deploy to Equicord
 
 ```bash
-# Empacotar e copiar para o diretório do Equicord
+# Package and copy to Equicord directory
 npx asar pack dist ~/.config/Equicord/equicord.asar
 
-# Reiniciar o Equicord completamente
+# Restart Equicord completely
 ```
 
 ## 📝 API
@@ -83,45 +83,45 @@ npx asar pack dist ~/.config/Equicord/equicord.asar
 ### NoteHandler
 
 ```typescript
-// Adicionar nota
+// Add note
 noteHandler.addNote(message: Message, notebook: string)
 
-// Deletar nota
+// Delete note
 noteHandler.deleteNote(noteId: string, notebook: string)
 
-// Mover nota entre notebooks
+// Move note between notebooks
 noteHandler.moveNote(note: Note, from: string, to: string)
 
-// Criar notebook
+// Create notebook
 noteHandler.newNoteBook(name: string, silent?: boolean)
 
-// Deletar notebook
+// Delete notebook
 noteHandler.deleteNotebook(name: string)
 
-// Exportar notas
+// Export notes
 const notes = await noteHandler.exportNotes()
 
-// Importar notas
+// Import notes
 await noteHandler.importNotes(notes: Note[])
 ```
 
 ## 🐛 Issues
 
-Encontrou um bug? Abra uma issue no GitHub!
+Found a bug? Open an issue on GitHub!
 
-## 📄 Licença
+## 📄 License
 
 GPL-3.0-or-later
 
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
 - **Dante** ([@Dantesousa](https://github.com/Dantesousa))
 
-## 🙏 Agradecimentos
+## 🙏 Acknowledgments
 
-- [Vencord](https://github.com/Vendicated/Vencord) - Framework base
-- [Equicord](https://github.com/Equicord/Equicord) - Fork do Vencord
+- [Vencord](https://github.com/Vendicated/Vencord) - Base framework
+- [Equicord](https://github.com/Equicord/Equicord) - Vencord fork
 
 ---
 
-Feito com 💜 para a comunidade do Discord
+Made with 💜 for the Discord community

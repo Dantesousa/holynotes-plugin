@@ -121,8 +121,7 @@ GPL-3.0-or-later
 
 - [Vencord](https://github.com/Vendicated/Vencord) - Framework base
 - [Equicord](https://github.com/Equicord/Equicord) - Fork do Vencord
-- Equipe do Goob-StationBR - Suporte da comunidade
 
 ---
 
-Feito com 💜 para a comunidade brasileira do Space Station 14
+Feito com 💜 para a comunidade do Discord

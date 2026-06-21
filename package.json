@@ -1,0 +1,24 @@
+{
+  "name": "holynotes-plugin",
+  "version": "1.0.0",
+  "description": "Salve mensagens do Discord como notas pessoais organizadas em notebooks",
+  "author": "Dante",
+  "license": "GPL-3.0-or-later",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "pnpm build-plugin",
+    "build-plugin": "pnpm run build:plugin",
+    "watch": "pnpm run build:plugin --watch"
+  },
+  "keywords": [
+    "discord",
+    "vencord",
+    "equicord",
+    "plugin",
+    "notes",
+    "bookmarks"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
